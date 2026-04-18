@@ -31,8 +31,10 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
+      # `baseurl` lu depuis _config.yml (vide = domaine custom amgma.fr).
+      # On n'utilise plus steps.pages.outputs.base_path qui force "/<repo>".
       - name: Build with Jekyll
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
 
