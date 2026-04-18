@@ -13,11 +13,11 @@ subtitle: >-
 
 ctas:
   - label: "Découvrir Book Nova"
-    href: "#product"
+    href: "/#product"
     variant: primary
     arrow: true
   - label: "Le studio"
-    href: "#studio"
+    href: "/#studio"
     variant: ghost
 
 meta:

@@ -7,11 +7,11 @@ columns:
   - title: "Studio"
     links:
       - label: "À propos"
-        href: "#studio"
+        href: "/#studio"
       - label: "Principes"
-        href: "#principles"
+        href: "/#principles"
       - label: "Équipe"
-        href: "#team"
+        href: "/#team"
   - title: "Produits"
     links:
       - label: "Book Nova ↗"

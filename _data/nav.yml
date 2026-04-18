@@ -1,15 +1,18 @@
+# Préfixe "/" obligatoire : garantit le retour à l'accueil même depuis
+# /mentions-legales/ ou toute autre page. Rendu via `relative_url` qui
+# préfixe le baseurl automatiquement.
 links:
   - label: Studio
-    href: "#studio"
+    href: "/#studio"
   - label: Principes
-    href: "#principles"
+    href: "/#principles"
   - label: Book Nova
-    href: "#product"
+    href: "/#product"
   - label: Équipe
-    href: "#team"
+    href: "/#team"
   - label: Contact
-    href: "#contact"
+    href: "/#contact"
 
 cta:
   label: "Nous écrire →"
-  href: "#contact"
+  href: "/#contact"

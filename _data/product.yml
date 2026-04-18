@@ -36,7 +36,7 @@ ctas:
     arrow: true
     target: "_blank"
   - label: "Dossier presse"
-    href: "#contact"
+    href: "/#contact"
     variant: ghost
 
 phone:

@@ -9,7 +9,11 @@
       <div class="footer-col">
         <h4>{{ col.title }}</h4>
         {% for link in col.links %}
-          <a href="{{ link.href }}"{% if link.target %} target="{{ link.target }}" rel="noopener"{% endif %}>{{ link.label }}</a>
+          {% if link.href contains '://' or link.href contains 'mailto:' %}
+            <a href="{{ link.href }}"{% if link.target %} target="{{ link.target }}" rel="noopener"{% endif %}>{{ link.label }}</a>
+          {% else %}
+            <a href="{{ link.href | relative_url }}">{{ link.label }}</a>
+          {% endif %}
         {% endfor %}
       </div>
     {% endfor %}

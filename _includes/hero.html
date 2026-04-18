@@ -8,7 +8,12 @@
     <p class="hero-sub">{{ hero.subtitle }}</p>
     <div class="hero-ctas">
       {% for cta in hero.ctas %}
-        <a href="{{ cta.href }}" class="btn btn-{{ cta.variant }}"{% if cta.target %} target="{{ cta.target }}"{% endif %}>
+        {% if cta.href contains '://' or cta.href contains 'mailto:' %}
+          {%- assign cta_href = cta.href -%}
+        {% else %}
+          {%- assign cta_href = cta.href | relative_url -%}
+        {% endif %}
+        <a href="{{ cta_href }}" class="btn btn-{{ cta.variant }}"{% if cta.target %} target="{{ cta.target }}"{% endif %}>
           {{ cta.label }}{% if cta.arrow %} <span class="btn-arrow"></span>{% endif %}
         </a>
       {% endfor %}
