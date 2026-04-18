@@ -247,14 +247,49 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .hero-meta-right { text-align: right; }
 .hero-meta strong { color: var(--ink-soft); font-weight: 500; }
 @media (max-width: 780px) {
-  .hero-meta { position: static; margin-top: 60px; }
+  /* Le hero est flex → forcer la colonne sinon .hero-meta s'affiche
+     à côté de .hero-content */
+  .hero { flex-direction: column; }
+
+  .hero-meta {
+    position: static;
+    margin-top: 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
   .hero-meta-right { text-align: left; }
+
+  /* Boutons unifiés sur mobile : stack pleine largeur */
+  .hero-ctas {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .btn {
+    white-space: nowrap;
+    padding: 14px 24px;
+    font-size: 14px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Product head: laisser le numéro seul sur sa ligne, badges en dessous */
+  .product-head { flex-wrap: wrap; gap: 10px; align-items: center; }
+  .product-head > span:first-child { flex-basis: 100%; }
+  .product-head .tag-live { font-size: 10px; padding: 3px 10px; }
+
+  /* Label rotation du phone: masqué (sortait du viewport) */
+  .phone-label { display: none; }
+
+  /* Phone back: évite débordement horizontal */
+  .phone-back { transform: rotate(3deg) translate(18px, 14px); }
 }
 
 /* Petits mobiles : rapetisser le h1 pour garder le CTA visible above the fold */
 @media (max-width: 420px) {
   .hero {
-    padding-top: 140px;
+    padding-top: 100px;
     padding-bottom: 80px;
     min-height: auto;
   }
