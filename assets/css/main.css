@@ -156,10 +156,10 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 
 /* ─── Hero ─── */
 .hero {
-  padding-top: 180px;
+  padding-top: 100px;
   padding-bottom: 140px;
   min-height: 100vh;
-  display: flex; align-items: center;
+  display: flex; align-items: flex-start;
   position: relative;
   overflow: hidden;
 }
