@@ -1,0 +1,10 @@
+{%- assign items = site.data.marquee.items -%}
+<div class="marquee">
+  <div class="marquee-track">
+    {% for loop_pass in (1..2) %}
+      {% for item in items %}
+        <span>{% if item.italic %}<em>{{ item.text }}</em>{% else %}{{ item.text }}{% endif %}</span><span class="dot">●</span>
+      {% endfor %}
+    {% endfor %}
+  </div>
+</div>

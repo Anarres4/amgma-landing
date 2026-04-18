@@ -1,25 +1,21 @@
 ---
+layout: default
 permalink: /404.html
-layout: page
+title: "404 — Page introuvable"
 ---
-
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<section class="contact">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content: center;">Erreur 404</div>
+    <h2>Cette page <em>n'existe pas.</em></h2>
+    <p class="contact-lede">
+      Le lien est peut-être cassé, ou la page a été déplacée.
+      Retour à la page d'accueil pour retrouver votre chemin.
+    </p>
+    <div class="contact-channels">
+      <a href="{{ '/' | relative_url }}" class="channel">
+        <span class="channel-tag">Retour</span>
+        Page d'accueil
+      </a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+eyebrow: "Studio indépendant · Paris · EST. 2024"
+
+# Les balises <em> rendent italic + terracotta (voir .hero h1 em)
+title_html: |
+  Nous éditons<br/>
+  des logiciels<br/>
+  <em>comme on édite<br/>des livres.</em>
+
+subtitle: >-
+  AMGMA est un studio logiciel indépendant. Nous concevons, éditons et faisons
+  grandir des applications mobiles pensées pour durer — à commencer par
+  Book Nova, notre première œuvre.
+
+ctas:
+  - label: "Découvrir Book Nova"
+    href: "#product"
+    variant: primary
+    arrow: true
+  - label: "Le studio"
+    href: "#studio"
+    variant: ghost
+
+meta:
+  left_html: "<strong>AMGMA SAS</strong> — Studio logiciel<br/>Paris, France"
+  right_html: >-
+    <strong>N° 001</strong> Book Nova ·
+    <em style="color: var(--sage); font-style: normal;">●</em> Live<br/>
+    <strong>N° 002</strong> — In progress

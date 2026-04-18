@@ -1,0 +1,21 @@
+{%- assign hero = site.data.hero -%}
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="wrap hero-content">
+    <div class="eyebrow">{{ hero.eyebrow }}</div>
+    <h1>{{ hero.title_html }}</h1>
+    <p class="hero-sub">{{ hero.subtitle }}</p>
+    <div class="hero-ctas">
+      {% for cta in hero.ctas %}
+        <a href="{{ cta.href }}" class="btn btn-{{ cta.variant }}"{% if cta.target %} target="{{ cta.target }}"{% endif %}>
+          {{ cta.label }}{% if cta.arrow %} <span class="btn-arrow"></span>{% endif %}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="hero-meta">
+    <div>{{ hero.meta.left_html }}</div>
+    <div class="hero-meta-right">{{ hero.meta.right_html }}</div>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+{%- assign about = site.data.about -%}
+<section class="about" id="studio">
+  <div class="wrap about-grid">
+    <div class="about-label">
+      <div class="eyebrow">{{ about.eyebrow }}</div>
+      <h2>{{ about.title_html }}</h2>
+    </div>
+    <div class="about-body">
+      {% for block in about.body %}
+        {% if block.type == "pull" %}
+          <div class="pull">{{ block.html }}</div>
+        {% else %}
+          <p>{{ block.html }}</p>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

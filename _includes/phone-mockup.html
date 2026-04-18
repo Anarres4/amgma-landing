@@ -1,0 +1,25 @@
+{%- assign phone = site.data.product.phone -%}
+<div class="phone-stage">
+  <div class="phone-back"></div>
+  <div class="phone">
+    <div class="phone-notch"></div>
+    <div class="phone-screen">
+      <div class="bn-status">
+        <span>{{ phone.status.time }}</span>
+        <span>{{ phone.status.signal }}</span>
+      </div>
+      <div class="bn-body">
+        <div class="bn-eyebrow">{{ phone.eyebrow }}</div>
+        <div class="bn-h">{{ phone.title_html }}</div>
+        <div class="bn-sub">{{ phone.sub }}</div>
+        <div class="bn-stack">
+          {% for book in phone.books %}
+            <div class="bn-book" style="background:{{ book.color }}; width:{{ book.width }}px;{% if book.height %} height:{{ book.height }}px;{% endif %}">{{ book.title }}</div>
+          {% endfor %}
+        </div>
+        <div class="bn-cta">{{ phone.cta }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="phone-label">{{ phone.label }}</div>
+</div>

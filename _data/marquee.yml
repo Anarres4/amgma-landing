@@ -1,0 +1,10 @@
+# Liste simple répétée 2x côté template pour produire une boucle sans couture.
+# Les items avec italic: true sont rendus en <em>.
+items:
+  - text: "Logiciel édité"
+  - text: "Fait à la main"
+  - text: "Indépendant"
+  - text: "Book Nova"
+    italic: true
+  - text: "Paris"
+  - text: "AMGMA"

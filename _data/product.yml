@@ -1,0 +1,79 @@
+head:
+  number: "N° 001 · Première œuvre"
+  tag: "● Live sur l'App Store"
+
+title_html: "Book <em>Nova.</em>"
+
+lede: >-
+  L'application qui transforme votre façon de lire. Scannez un livre,
+  découvrez sa profondeur, construisez votre bibliothèque vivante —
+  et redonnez sa place à la lecture, une page à la fois.
+
+features:
+  - num: "01"
+    label: "Scans illimités"
+    desc: "Identifiez n'importe quel livre"
+  - num: "02"
+    label: "Recommandations éditoriales"
+    desc: "Humaines, pas algorithmiques"
+  - num: "03"
+    label: "Statistiques de lecture"
+    desc: "Votre carnet vivant"
+  - num: "04"
+    label: "Bibliothèque enrichie"
+    desc: "Chaque livre, une histoire"
+
+ctas:
+  - label: "Visiter book-nova.com"
+    href: "https://book-nova.com/"
+    variant: primary
+    arrow: true
+    target: "_blank"
+  - label: "Dossier presse"
+    href: "#contact"
+    variant: ghost
+
+phone:
+  label: "N° 001 — iOS"
+  status:
+    time: "9:41"
+    signal: "●●●●"
+  eyebrow: "VOTRE BIBLIOTHÈQUE"
+  title_html: "42 livres,<br/><em>une vie.</em>"
+  sub: "Votre pile grandit à chaque lecture terminée."
+  cta: "Scanner un livre"
+  # Pile de 10 livres (rendue en flex column-reverse)
+  books:
+    - title: "LES FOURMIS"
+      color: "#8B3E2F"
+      width: 104
+    - title: "L'ÉTRANGER"
+      color: "#2B4A6B"
+      width: 110
+    - title: "L'ALCHIMISTE"
+      color: "#D9A44A"
+      width: 98
+    - title: "1984"
+      color: "#4A6B3E"
+      width: 112
+      height: 14
+    - title: "MADAME BOVARY"
+      color: "#6B3A5E"
+      width: 102
+    - title: "LE PETIT PRINCE"
+      color: "#B8653A"
+      width: 106
+    - title: "DUNE"
+      color: "#3F3A5B"
+      width: 108
+      height: 13
+    - title: "SAPIENS"
+      color: "#7A8966"
+      width: 100
+    - title: "LE ROUGE ET LE NOIR"
+      color: "#A8502E"
+      width: 104
+    - title: "GERMINAL"
+      color: "#2B4A4A"
+      width: 106
+      height: 13

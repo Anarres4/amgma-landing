@@ -1,0 +1,22 @@
+eyebrow: "Le studio"
+title_html: "Un studio, <em>pas une startup.</em>"
+
+# Tableau de blocs : paragraph ou pull (citation encadrée terracotta)
+body:
+  - type: paragraph
+    html: >-
+      AMGMA est une SAS française fondée en 2024 par
+      <strong>Ana Martinez</strong>, présidente, et
+      <strong>Florent Garcia</strong>, directeur général. Nous ne sommes
+      pas une usine à MVP.
+  - type: pull
+    html: >-
+      Nous publions peu. Nous polissons beaucoup. Chaque application
+      quitte nos mains quand elle est prête — pas quand la roadmap l'exige.
+  - type: paragraph
+    html: >-
+      Notre premier titre, <strong>Book Nova</strong>, accompagne une
+      nouvelle génération de lecteurs sur iOS. Notre ambition : bâtir
+      un catalogue d'applications mobiles exigeantes, distribuées dans
+      le monde entier, chacune portant la même signature — précision,
+      chaleur, indépendance.

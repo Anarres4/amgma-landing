@@ -1,0 +1,17 @@
+{%- assign principles = site.data.principles -%}
+<section class="principles" id="principles">
+  <div class="wrap">
+    <div class="principles-head">
+      <h2>{{ principles.title_html }}</h2>
+    </div>
+    <div class="principles-grid">
+      {% for p in principles.items %}
+        <div class="principle">
+          <div class="principle-num">{{ p.num }}</div>
+          <h3>{{ p.title_html }}</h3>
+          <p>{{ p.text }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

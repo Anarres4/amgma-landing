@@ -1,0 +1,16 @@
+{%- assign contact = site.data.contact -%}
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content: center;">{{ contact.eyebrow }}</div>
+    <h2>{{ contact.title_html }}</h2>
+    <p class="contact-lede">{{ contact.lede }}</p>
+    <div class="contact-channels">
+      {% for ch in contact.channels %}
+        <a href="{{ ch.href }}" class="channel">
+          <span class="channel-tag">{{ ch.tag }}</span>
+          {{ ch.label }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

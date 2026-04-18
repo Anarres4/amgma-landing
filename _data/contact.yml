@@ -1,0 +1,17 @@
+eyebrow: "Entrons en contact"
+title_html: "Parlons <em>logiciel.</em>"
+
+lede: >-
+  Investisseurs, partenaires éditeurs, libraires, journalistes —
+  écrivez-nous. Nous lisons chaque message, nous répondons à tout.
+
+channels:
+  - tag: "Mail"
+    label: "hello@amgma.fr"
+    href: "mailto:hello@amgma.fr"
+  - tag: "Presse"
+    label: "presse@amgma.fr"
+    href: "mailto:presse@amgma.fr"
+  - tag: "LinkedIn"
+    label: "/amgma-studio"
+    href: "#"

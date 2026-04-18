@@ -1,0 +1,12 @@
+<nav class="nav">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-mark">A</div>
+    AMGMA
+  </a>
+  <div class="nav-links">
+    {% for link in site.data.nav.links %}
+      <a href="{{ link.href }}">{{ link.label }}</a>
+    {% endfor %}
+  </div>
+  <a href="{{ site.data.nav.cta.href }}" class="nav-cta">{{ site.data.nav.cta.label }}</a>
+</nav>

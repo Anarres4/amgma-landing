@@ -1,0 +1,30 @@
+{%- assign team = site.data.team -%}
+<section class="team" id="team">
+  <div class="wrap">
+    <div class="team-head">
+      <div class="eyebrow">{{ team.eyebrow }}</div>
+      <h2>{{ team.title_html }}</h2>
+      <p>{{ team.lede }}</p>
+    </div>
+    <div class="team-grid">
+      {% for m in team.members %}
+        <div class="member">
+          <div class="avatar">
+            <div class="avatar-initials">{{ m.initial }}</div>
+            <div class="avatar-tag">{{ m.tag }}</div>
+          </div>
+          <div>
+            <div class="member-role">{{ m.role }}</div>
+            <div class="member-name">{{ m.name_html }}</div>
+            <p class="member-bio">{{ m.bio }}</p>
+            <div class="member-links">
+              {% for link in m.links %}
+                <a href="{{ link.href }}">{{ link.label }}</a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

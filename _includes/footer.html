@@ -1,0 +1,21 @@
+{%- assign footer = site.data.footer -%}
+<footer>
+  <div class="footer-wrap">
+    <div>
+      <div class="footer-brand">{{ footer.brand_html }}</div>
+      <p class="footer-desc">{{ footer.description }}</p>
+    </div>
+    {% for col in footer.columns %}
+      <div class="footer-col">
+        <h4>{{ col.title }}</h4>
+        {% for link in col.links %}
+          <a href="{{ link.href }}"{% if link.target %} target="{{ link.target }}" rel="noopener"{% endif %}>{{ link.label }}</a>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+  <div class="footer-bottom">
+    <span>{{ footer.bottom.left }}</span>
+    <span>{{ footer.bottom.right }}</span>
+  </div>
+</footer>

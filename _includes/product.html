@@ -1,0 +1,33 @@
+{%- assign product = site.data.product -%}
+<section class="product" id="product">
+  <div class="product-glow"></div>
+  <div class="wrap">
+    <div class="product-head">
+      <span>{{ product.head.number }}</span>
+      <span class="tag-live">{{ product.head.tag }}</span>
+    </div>
+    <h2 class="product-title">{{ product.title_html }}</h2>
+    <div class="product-grid">
+      <div>
+        <p class="product-lede">{{ product.lede }}</p>
+        <ul class="feat-list">
+          {% for feat in product.features %}
+            <li>
+              <span class="num">{{ feat.num }}</span>
+              <span class="label">{{ feat.label }}</span>
+              <span class="desc">{{ feat.desc }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+        <div class="hero-ctas">
+          {% for cta in product.ctas %}
+            <a href="{{ cta.href }}" class="btn btn-{{ cta.variant }}"{% if cta.target %} target="{{ cta.target }}" rel="noopener"{% endif %}>
+              {{ cta.label }}{% if cta.arrow %} <span class="btn-arrow"></span>{% endif %}
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+      {% include phone-mockup.html %}
+    </div>
+  </div>
+</section>

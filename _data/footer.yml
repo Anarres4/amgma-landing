@@ -1,0 +1,33 @@
+brand_html: "AMGMA<em>.</em>"
+description: >-
+  Studio logiciel indépendant basé à Paris.
+  Nous éditons des applications mobiles pensées pour durer.
+
+columns:
+  - title: "Studio"
+    links:
+      - label: "À propos"
+        href: "#studio"
+      - label: "Principes"
+        href: "#principles"
+      - label: "Équipe"
+        href: "#team"
+  - title: "Produits"
+    links:
+      - label: "Book Nova ↗"
+        href: "https://book-nova.com/"
+        target: "_blank"
+      - label: "N° 002 — Bientôt"
+        href: "#"
+  - title: "Contact"
+    links:
+      - label: "hello@amgma.fr"
+        href: "mailto:hello@amgma.fr"
+      - label: "presse@amgma.fr"
+        href: "mailto:presse@amgma.fr"
+      - label: "LinkedIn"
+        href: "#"
+
+bottom:
+  left: "© 2026 AMGMA SAS · Paris · France"
+  right: "Mentions légales · Confidentialité"

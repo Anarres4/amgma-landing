@@ -1,0 +1,15 @@
+links:
+  - label: Studio
+    href: "#studio"
+  - label: Principes
+    href: "#principles"
+  - label: Book Nova
+    href: "#product"
+  - label: Équipe
+    href: "#team"
+  - label: Contact
+    href: "#contact"
+
+cta:
+  label: "Nous écrire →"
+  href: "#contact"
