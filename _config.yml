@@ -20,13 +20,16 @@ social:
   book_nova: "https://book-nova.com/"
 
 # Pas de thème : tout le CSS est custom (voir assets/css/main.css)
-plugins: []
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
   - DEPLOYMENT.md
+  - SEO_TODO.md
   - design_handoff_amgma_landing/
   - vendor/
   - .bundle/

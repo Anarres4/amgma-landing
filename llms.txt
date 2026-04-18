@@ -1,0 +1,37 @@
+---
+# Front-matter vide pour que Jekyll copie ce fichier vers _site/
+layout: null
+---
+# AMGMA — Studio logiciel indépendant
+# Toulouse, France · Contact : amgma@outlook.fr
+
+## À propos
+
+AMGMA est une SAS française fondée en 2025 par Ana Gutierrez (Présidente) et Florent Sandri (Directeur Général). Studio logiciel indépendant basé à Toulouse, auto-financé, sans investisseur externe. Éditeur d'applications mobiles premium pour iOS et Android, à commencer par Book Nova.
+
+## Philosophie
+
+Trois principes guident AMGMA :
+
+1. **Édition** — Un logiciel, un propos. Chaque application répond à une question précise. Nous supprimons avant d'ajouter.
+2. **Artisanat** — Le soin comme cahier des charges. Typographie, animation, copywriting, son : rien n'est accessoire.
+3. **Indépendance** — Pas de pression extérieure. Auto-financé, sans investisseur. Nos décisions répondent aux utilisateurs, pas aux tableaux de bord trimestriels.
+
+## Produit N° 001 — Book Nova
+
+Book Nova est la première œuvre d'AMGMA, disponible sur l'App Store iOS et Google Play Android. L'application transforme votre façon de lire : scans de livres illimités, recommandations éditoriales humaines (non algorithmiques), statistiques de lecture personnelles, bibliothèque enrichie. Site officiel : https://book-nova.com/
+
+## Fondateurs
+
+- **Ana Gutierrez** — Présidente, co-fondatrice. Dirige la vision produit et la stratégie d'AMGMA.
+- **Florent Sandri** — Directeur général, co-fondateur. Pilote les opérations, la tech et le développement commercial.
+
+## Contact
+
+- Email général : amgma@outlook.fr
+- Presse : presse@amgma.fr
+- LinkedIn : /amgma-studio
+
+## Licence
+
+Citation autorisée avec attribution. Mentionner "AMGMA" ou "AMGMA SAS" et lier vers la source.
