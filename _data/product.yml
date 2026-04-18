@@ -34,7 +34,7 @@ ctas:
     variant: ghost
 
 phone:
-  label: "N° 001 — iOS"
+  label: "N° 001 — iOS / Android"
   status:
     time: "9:41"
     signal: "●●●●"

@@ -8,7 +8,7 @@ members:
   - initial: "A"
     tag: "AM — 01"
     role: "Présidente · Co-fondatrice"
-    name_html: "Ana <em>Martinez</em>"
+    name_html: "Ana <em>Gutierrez</em>"
     bio: >-
       Ana dirige la vision produit et la stratégie d'AMGMA. Elle défend
       une conception du logiciel qui place l'utilisateur, la lenteur et
@@ -21,7 +21,7 @@ members:
   - initial: "F"
     tag: "FG — 02"
     role: "Directeur général · Co-fondateur"
-    name_html: "Florent <em>Garcia</em>"
+    name_html: "Florent <em>Sandri</em>"
     bio: >-
       Florent pilote les opérations, la tech et le développement commercial.
       Il veille à ce que chaque application AMGMA trouve son public — sans

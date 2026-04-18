@@ -5,9 +5,9 @@ title_html: "Un studio, <em>pas une startup.</em>"
 body:
   - type: paragraph
     html: >-
-      AMGMA est une SAS française fondée en 2024 par
-      <strong>Ana Martinez</strong>, présidente, et
-      <strong>Florent Garcia</strong>, directeur général. Nous ne sommes
+      AMGMA est une SAS française fondée en 2025 par
+      <strong>Ana Gutierrez</strong>, présidente, et
+      <strong>Florent Sandri</strong>, directeur général. Nous ne sommes
       pas une usine à MVP.
   - type: pull
     html: >-
@@ -16,7 +16,7 @@ body:
   - type: paragraph
     html: >-
       Notre premier titre, <strong>Book Nova</strong>, accompagne une
-      nouvelle génération de lecteurs sur iOS. Notre ambition : bâtir
+      nouvelle génération de lecteurs sur iOS et Android. Notre ambition : bâtir
       un catalogue d'applications mobiles exigeantes, distribuées dans
       le monde entier, chacune portant la même signature — précision,
       chaleur, indépendance.

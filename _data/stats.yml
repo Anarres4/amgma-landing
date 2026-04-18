@@ -1,9 +1,9 @@
 items:
-  - value_html: "<em>2024</em>"
+  - value_html: "<em>2025</em>"
     label: "Année de fondation"
   - value_html: "1 / <em>∞</em>"
     label: "Applications publiées / à venir"
   - value_html: "0 <em>€</em>"
     label: "Levées de fonds — auto-financé"
   - value_html: "2"
-    label: "Co-fondateurs, Paris"
+    label: "Co-fondateurs, Toulouse"

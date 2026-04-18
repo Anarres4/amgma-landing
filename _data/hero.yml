@@ -1,4 +1,4 @@
-eyebrow: "Studio indépendant · Paris · EST. 2024"
+eyebrow: "Studio indépendant · Toulouse · 2025"
 
 # Les balises <em> rendent italic + terracotta (voir .hero h1 em)
 title_html: |
@@ -21,7 +21,7 @@ ctas:
     variant: ghost
 
 meta:
-  left_html: "<strong>AMGMA SAS</strong> — Studio logiciel<br/>Paris, France"
+  left_html: "<strong>AMGMA SAS</strong> — Studio logiciel<br/>Toulouse, France"
   right_html: >-
     <strong>N° 001</strong> Book Nova ·
     <em style="color: var(--sage); font-style: normal;">●</em> Live<br/>

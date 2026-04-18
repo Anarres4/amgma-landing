@@ -187,7 +187,9 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
   font-size: clamp(56px, 9vw, 132px);
   line-height: 0.95;
   letter-spacing: -0.04em;
-  font-weight: 350;
+  font-weight: 400;
+  /* Désactive l'opsz auto qui affine les traits à grande taille (barre du "e" invisible) */
+  font-optical-sizing: none;
   margin-bottom: 40px;
 }
 .hero h1 em {

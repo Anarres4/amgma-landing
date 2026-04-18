@@ -1,6 +1,6 @@
 brand_html: "AMGMA<em>.</em>"
 description: >-
-  Studio logiciel indépendant basé à Paris.
+  Studio logiciel indépendant basé à Toulouse.
   Nous éditons des applications mobiles pensées pour durer.
 
 columns:
@@ -29,5 +29,5 @@ columns:
         href: "#"
 
 bottom:
-  left: "© 2026 AMGMA SAS · Paris · France"
+  left: "© 2026 AMGMA SAS · Toulouse · France"
   right: "Mentions légales · Confidentialité"
