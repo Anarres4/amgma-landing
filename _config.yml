@@ -1,0 +1,22 @@
+# Site settings
+title: AMGMA Landing
+email: your-email@example.com
+description: >-
+  Landing page AMGMA construite avec Jekyll et hébergée sur GitHub Pages.
+baseurl: "/amgma-landing" # sous-chemin du site (laisse vide si domaine custom)
+url: "https://anarres4.github.io" # hostname GitHub Pages par défaut
+
+github_username: Anarres4
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclusions
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+  - .bundle/
