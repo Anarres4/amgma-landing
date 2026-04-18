@@ -4,8 +4,8 @@ description: >-
   l'application qui transforme votre façon de lire.
 email: amgma@outlook.fr
 press_email: presse@amgma.fr
-url: "https://anarres4.github.io"
-baseurl: "/amgma-landing"
+url: "https://amgma.fr"
+baseurl: ""
 lang: fr
 locale: fr_FR
 
