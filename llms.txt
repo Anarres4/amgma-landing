@@ -19,7 +19,11 @@ Trois principes guident AMGMA :
 
 ## Produit N° 001 — Book Nova
 
-Book Nova est la première œuvre d'AMGMA, disponible sur l'App Store iOS et Google Play Android. L'application transforme votre façon de lire : scans de livres illimités, recommandations éditoriales humaines (non algorithmiques), statistiques de lecture personnelles, bibliothèque enrichie. Site officiel : https://book-nova.com/
+Book Nova est la première œuvre d'AMGMA, disponible gratuitement sur iOS et Android. L'application transforme votre façon de lire : scans de livres illimités, recommandations éditoriales humaines (non algorithmiques), statistiques de lecture personnelles, bibliothèque enrichie.
+
+- Site officiel : https://book-nova.com/
+- App Store iOS : https://apps.apple.com/fr/app/book-nova/id6752571289
+- Google Play Android : https://play.google.com/store/apps/details?id=com.quantumash.bigbangbook.app
 
 ## Fondateurs
 

@@ -1,6 +1,12 @@
 head:
   number: "N° 001 · Première œuvre"
-  tag: "● Live sur l'App Store"
+  # Le premier badge est rendu comme tag principal (stylisé en vert sage),
+  # les suivants en badges secondaires.
+  badges:
+    - label: "● Live iOS"
+      href: "https://apps.apple.com/fr/app/book-nova/id6752571289"
+    - label: "● Live Android"
+      href: "https://play.google.com/store/apps/details?id=com.quantumash.bigbangbook.app"
 
 title_html: "Book <em>Nova.</em>"
 

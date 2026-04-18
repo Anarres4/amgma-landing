@@ -25,5 +25,7 @@ columns:
         href: "mailto:amgma@outlook.fr"
 
 bottom:
-  left: "© 2026 AMGMA SAS · Toulouse · France"
-  right: "Mentions légales · Confidentialité"
+  left: "© 2026 AMGMA · Toulouse · France"
+  legal_link:
+    label: "Mentions légales"
+    href: "/mentions-legales/"

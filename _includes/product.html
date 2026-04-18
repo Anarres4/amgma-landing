@@ -4,7 +4,9 @@
   <div class="wrap">
     <div class="product-head">
       <span>{{ product.head.number }}</span>
-      <span class="tag-live">{{ product.head.tag }}</span>
+      {% for badge in product.head.badges %}
+        <a href="{{ badge.href }}" class="tag-live" target="_blank" rel="noopener">{{ badge.label }}</a>
+      {% endfor %}
     </div>
     <h2 class="product-title" id="product-title">{{ product.title_html }}</h2>
     <div class="product-grid">

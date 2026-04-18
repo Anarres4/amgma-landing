@@ -415,13 +415,16 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
   color: var(--ink-faint);
 }
 .product-head .tag-live {
-  padding: 3px 10px;
+  padding: 4px 12px;
   border-radius: 999px;
   background: var(--sage);
   color: var(--bg);
   font-weight: 600;
   letter-spacing: 0.5px;
+  transition: transform 0.2s, filter 0.2s;
 }
+.product-head .tag-live + .tag-live { background: var(--gold); }
+.product-head a.tag-live:hover { transform: translateY(-1px); filter: brightness(1.08); }
 .product-title {
   font-family: var(--f-display);
   font-size: clamp(60px, 9vw, 128px);

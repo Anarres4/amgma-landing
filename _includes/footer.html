@@ -16,6 +16,10 @@
   </div>
   <div class="footer-bottom">
     <span>{{ footer.bottom.left }}</span>
-    <span>{{ footer.bottom.right }}</span>
+    {% if footer.bottom.legal_link %}
+      <span><a href="{{ footer.bottom.legal_link.href | relative_url }}">{{ footer.bottom.legal_link.label }}</a></span>
+    {% elsif footer.bottom.right %}
+      <span>{{ footer.bottom.right }}</span>
+    {% endif %}
   </div>
 </footer>
