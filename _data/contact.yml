@@ -7,11 +7,5 @@ lede: >-
 
 channels:
   - tag: "Mail"
-    label: "hello@amgma.fr"
-    href: "mailto:hello@amgma.fr"
-  - tag: "Presse"
-    label: "presse@amgma.fr"
-    href: "mailto:presse@amgma.fr"
-  - tag: "LinkedIn"
-    label: "/amgma-studio"
-    href: "#"
+    label: "amgma@outlook.fr"
+    href: "mailto:amgma@outlook.fr"

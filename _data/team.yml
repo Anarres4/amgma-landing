@@ -13,11 +13,6 @@ members:
       Ana dirige la vision produit et la stratégie d'AMGMA. Elle défend
       une conception du logiciel qui place l'utilisateur, la lenteur et
       la précision éditoriale au-dessus du reste.
-    links:
-      - label: "LinkedIn ↗"
-        href: "#"
-      - label: "Email ↗"
-        href: "mailto:ana@amgma.fr"
   - initial: "F"
     tag: "FG — 02"
     role: "Directeur général · Co-fondateur"
@@ -26,8 +21,3 @@ members:
       Florent pilote les opérations, la tech et le développement commercial.
       Il veille à ce que chaque application AMGMA trouve son public — sans
       jamais sacrifier le soin au scale.
-    links:
-      - label: "LinkedIn ↗"
-        href: "#"
-      - label: "Email ↗"
-        href: "mailto:florent@amgma.fr"

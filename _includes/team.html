@@ -17,11 +17,13 @@
             <div class="member-role">{{ m.role }}</div>
             <div class="member-name">{{ m.name_html }}</div>
             <p class="member-bio">{{ m.bio }}</p>
-            <div class="member-links">
-              {% for link in m.links %}
-                <a href="{{ link.href }}">{{ link.label }}</a>
-              {% endfor %}
-            </div>
+            {% if m.links %}
+              <div class="member-links">
+                {% for link in m.links %}
+                  <a href="{{ link.href }}">{{ link.label }}</a>
+                {% endfor %}
+              </div>
+            {% endif %}
           </div>
         </div>
       {% endfor %}

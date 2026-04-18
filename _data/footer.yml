@@ -21,12 +21,8 @@ columns:
         href: "#"
   - title: "Contact"
     links:
-      - label: "hello@amgma.fr"
-        href: "mailto:hello@amgma.fr"
-      - label: "presse@amgma.fr"
-        href: "mailto:presse@amgma.fr"
-      - label: "LinkedIn"
-        href: "#"
+      - label: "amgma@outlook.fr"
+        href: "mailto:amgma@outlook.fr"
 
 bottom:
   left: "© 2026 AMGMA SAS · Toulouse · France"
