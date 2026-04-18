@@ -14,7 +14,7 @@
   --line-strong: rgba(244, 235, 217, 0.16);
   --ink: #F4EBD9;
   --ink-soft: #C9BFA9;
-  --ink-faint: #7A7266;
+  --ink-faint: #9A9082;        /* WCAG AA ≥ 4.5:1 sur --bg */
   --accent: #E4885F;      /* Book Nova terracotta */
   --accent-deep: #C96A4B;
   --gold: #F0BB62;
@@ -42,6 +42,34 @@ a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 
 ::selection { background: var(--accent); color: var(--bg); }
+
+/* ─── Focus visible (clavier) ─── */
+:focus { outline: none; }
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.btn:focus-visible,
+.nav-cta:focus-visible,
+.channel:focus-visible { outline-offset: 4px; }
+
+/* ─── Skip link ─── */
+.skip-link {
+  position: absolute;
+  top: -100px; left: 16px;
+  z-index: 1000;
+  padding: 10px 16px;
+  background: var(--ink);
+  color: var(--bg);
+  font-family: var(--f-mono);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 999px;
+  transition: top 0.2s ease;
+}
+.skip-link:focus { top: 16px; }
 
 /* ─── Film grain overlay ─── */
 body::before {

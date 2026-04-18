@@ -1,12 +1,12 @@
 {%- assign product = site.data.product -%}
-<section class="product" id="product">
-  <div class="product-glow"></div>
+<section class="product" id="product" aria-labelledby="product-title">
+  <div class="product-glow" aria-hidden="true"></div>
   <div class="wrap">
     <div class="product-head">
       <span>{{ product.head.number }}</span>
       <span class="tag-live">{{ product.head.tag }}</span>
     </div>
-    <h2 class="product-title">{{ product.title_html }}</h2>
+    <h2 class="product-title" id="product-title">{{ product.title_html }}</h2>
     <div class="product-grid">
       <div>
         <p class="product-lede">{{ product.lede }}</p>

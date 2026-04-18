@@ -1,7 +1,7 @@
 {%- assign phone = site.data.product.phone -%}
-<div class="phone-stage">
-  <div class="phone-back"></div>
-  <div class="phone">
+<div class="phone-stage" role="img" aria-label="Aperçu de l'application Book Nova sur iPhone, affichant votre bibliothèque de 42 livres">
+  <div class="phone-back" aria-hidden="true"></div>
+  <div class="phone" aria-hidden="true">
     <div class="phone-notch"></div>
     <div class="phone-screen">
       <div class="bn-status">
@@ -21,5 +21,5 @@
       </div>
     </div>
   </div>
-  <div class="phone-label">{{ phone.label }}</div>
+  <div class="phone-label" aria-hidden="true">{{ phone.label }}</div>
 </div>
