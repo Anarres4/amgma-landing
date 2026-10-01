@@ -656,7 +656,7 @@ html:not(.theme-dark) .hero-daylight {
 .phone-stage:hover .phone { transform: translateY(-8px); }
 .phone-screen {
   position: relative;
-  aspect-ratio: 9 / 16;
+  aspect-ratio: 9 / 19.5;       /* écran d'iPhone, comme la vidéo (720 × 1560) */
   border-radius: 40px;
   overflow: hidden;
   background: #3D3590;          /* violet de la vidéo, avant le poster */

@@ -5,7 +5,7 @@
     <div class="phone-screen">
       {%- comment -%} `controls` sert de repli sans JS : product-video.js le retire. {%- endcomment -%}
       <video class="phone-video" data-product-video muted loop playsinline controls preload="none"
-             width="720" height="1280" poster="{{ video.poster | relative_url }}"
+             width="720" height="1560" poster="{{ video.poster | relative_url }}"
              aria-label="{{ video.title | escape }}" aria-describedby="product-video-transcript">
         {% for s in video.sources %}
           <source src="{{ s.src | relative_url }}" type='{{ s.type }}' />
