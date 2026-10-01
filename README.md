@@ -83,7 +83,7 @@ Voir [DEPLOYMENT.md](DEPLOYMENT.md) pour les détails (choix de GitHub Actions v
 - Thème jour (papier) par défaut, thème nuit au choix (mémorisé), contrastes WCAG AA dans les deux
 - Skip link clavier
 - `aria-hidden` sur les éléments décoratifs
-- `prefers-reduced-motion` respecté (désactive marquee, reveal et lecture automatique de la vidéo)
+- `prefers-reduced-motion` respecté (désactive marquee, reveal, arrivée de la lumière du hero et lecture automatique de la vidéo)
 - Vidéo muette, avec bouton lecture/pause
 
 ## Licence

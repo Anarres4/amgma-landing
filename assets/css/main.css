@@ -133,13 +133,6 @@ body::before {
   mix-blend-mode: overlay;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' /></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
 }
-/* Le jour, ce grain devient celui du papier : des points couleur encre,
-   sans mélange (l'overlay ne se voit pas sur un fond clair) */
-html:not(.theme-dark) body::before {
-  opacity: 0.2;
-  mix-blend-mode: normal;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.17 0 0 0 0 0.13 0 0 0 0 0.09 1.4 0 0 0 -0.62'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
-}
 
 /* ─── Monogramme « A. » (logo) ─── */
 .brand-mark { display: block; width: auto; flex: none; }
@@ -264,6 +257,10 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .hero-daylight { display: none; }
 html:not(.theme-dark) .hero-glow { display: none; }
 html:not(.theme-dark) .hero-grid { opacity: 0.5; }
+/* La lumière dorée passe parfois derrière les petits textes du hero (surtout
+   en faisant défiler) : leur encre pâle y est un cran plus foncée pour rester
+   au-dessus de 4.5:1 (80 % de --ink-faint, 20 % de --ink) */
+html:not(.theme-dark) .hero { --ink-faint: #655544; }
 html:not(.theme-dark) .hero-daylight {
   display: block;
   position: absolute; z-index: 1;
@@ -274,6 +271,27 @@ html:not(.theme-dark) .hero-daylight {
 }
 @media (max-width: 780px) {
   html:not(.theme-dark) .hero-daylight { top: -150px; right: -400px; width: 720px; height: 720px; }
+}
+/* Le soleil entre : au chargement, la lumière apparaît en pivotant un peu,
+   puis elle reste en partie en place quand on fait défiler, comme si elle
+   venait d'une vraie fenêtre. Sans animation liée au défilement, elle reste
+   simplement fixe. */
+@keyframes daylight-in {
+  from { opacity: 0; rotate: 5deg; }
+  to   { opacity: 1; rotate: 0deg; }
+}
+@keyframes daylight-stay { to { translate: 0 40vh; } }
+html:not(.theme-dark) .hero-daylight {
+  animation: daylight-in 2.8s cubic-bezier(0.22, 0.61, 0.36, 1) 0.3s both;
+}
+@supports (animation-timeline: scroll()) {
+  html:not(.theme-dark) .hero-daylight {
+    animation: daylight-in 2.8s cubic-bezier(0.22, 0.61, 0.36, 1) 0.3s both,
+               daylight-stay linear both;
+    /* après le raccourci « animation », qui remet la timeline à auto */
+    animation-timeline: auto, scroll(root);
+    animation-range: normal, 0 100vh;
+  }
 }
 .hero-content { position: relative; z-index: 2; max-width: 1100px; }
 .hero h1 {
@@ -1016,6 +1034,7 @@ html.theme-dark .theme-fab .icon-moon { display: block; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .marquee-track { animation: none; }
   .phone-stage:hover .phone { transform: none; }
+  html:not(.theme-dark) .hero-daylight { animation: none; }
   html { scroll-behavior: auto; }
 }
 
