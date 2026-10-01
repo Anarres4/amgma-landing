@@ -44,12 +44,13 @@ ctas:
 # (assets/js/product-video.js). Le navigateur prend la 1re source qu'il sait
 # lire : AV1 (plus légère), sinon H.264.
 # Format d'écran d'iPhone (720 × 1560, soit 9:19.5) : l'original en 9:16 est
-# prolongé de 140 px en haut et en bas en étirant la couleur de ses bords
-# (floutée), rien n'est rogné. « ?v=2 » force le rechargement de l'ancienne
-# vidéo en 9:16.
+# prolongé de 140 px en haut et en bas avec la couleur du fond de ses bords,
+# débarrassée des étoiles, confettis et objets qui passent (filtres médians
+# dans l'espace et dans le temps), puis floutée. Rien n'est rogné. Le « ?v= »
+# force les navigateurs à recharger la vidéo quand elle change.
 video:
   label: "N° 001 · iOS / Android"
-  poster: "/assets/video/book-nova-promo-poster.webp?v=2"
+  poster: "/assets/video/book-nova-promo-poster.webp?v=3"
   title: "Vidéo de présentation de Book Nova"
   # Textes affichés dans la vidéo, dans l'ordre (alternative pour les
   # lecteurs d'écran, la vidéo étant muette) : à tenir à jour avec la vidéo.
@@ -63,7 +64,7 @@ video:
     ton rythme. Book Nova, regarde ta pile grandir. Gratuit sur iPhone et
     Android.
   sources:
-    - src: "/assets/video/book-nova-promo-av1.mp4?v=2"
+    - src: "/assets/video/book-nova-promo-av1.mp4?v=3"
       type: 'video/mp4; codecs="av01.0.08M.08"'
-    - src: "/assets/video/book-nova-promo-h264.mp4?v=2"
+    - src: "/assets/video/book-nova-promo-h264.mp4?v=3"
       type: 'video/mp4; codecs="avc1.640028"'
