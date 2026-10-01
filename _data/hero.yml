@@ -8,7 +8,7 @@ title_html: |
 
 subtitle: >-
   AMGMA est un studio logiciel indépendant. Nous concevons, éditons et faisons
-  grandir des applications mobiles pensées pour durer — à commencer par
+  grandir des applications mobiles pensées pour durer, à commencer par
   Book Nova, notre première œuvre.
 
 ctas:
@@ -21,8 +21,8 @@ ctas:
     variant: ghost
 
 meta:
-  left_html: "<strong>AMGMA SAS</strong> — Studio logiciel<br/>Toulouse, France"
+  left_html: "<strong>AMGMA SAS</strong>, studio logiciel<br/>Toulouse, France"
   right_html: >-
     <strong>N° 001</strong> Book Nova ·
     <em style="color: var(--sage); font-style: normal;">●</em> Live<br/>
-    <strong>N° 002</strong> — In progress
+    <strong>N° 002</strong> In progress

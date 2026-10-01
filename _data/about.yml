@@ -12,11 +12,11 @@ body:
   - type: pull
     html: >-
       Nous publions peu. Nous polissons beaucoup. Chaque application
-      quitte nos mains quand elle est prête — pas quand la roadmap l'exige.
+      quitte nos mains quand elle est prête, pas quand la roadmap l'exige.
   - type: paragraph
     html: >-
       Notre premier titre, <strong>Book Nova</strong>, accompagne une
       nouvelle génération de lecteurs sur iOS et Android. Notre ambition : bâtir
       un catalogue d'applications mobiles exigeantes, distribuées dans
-      le monde entier, chacune portant la même signature — précision,
+      le monde entier, chacune portant la même signature : précision,
       chaleur, indépendance.

@@ -1,13 +1,13 @@
-# AMGMA — Landing page
+# Landing page AMGMA
 
 Site vitrine du studio AMGMA, construit en **Jekyll** et hébergé gratuitement sur **GitHub Pages**.
 
 ## Stack
 
-- **Jekyll 4.4** — générateur de site statique
-- **Ruby 3.4** — runtime
-- **CSS custom** — aucun framework (pas de Bootstrap / Tailwind)
-- **JS minimal** — IntersectionObserver pour le reveal au scroll et la vidéo Book Nova, bascule jour/nuit
+- **Jekyll 4.4** : générateur de site statique
+- **Ruby 3.4** : runtime
+- **CSS custom** : aucun framework (pas de Bootstrap / Tailwind)
+- **JS minimal** : IntersectionObserver pour le reveal au scroll et la vidéo Book Nova, bascule jour/nuit
 
 ## Prérequis
 
@@ -56,7 +56,7 @@ Le site est disponible sur http://127.0.0.1:4000/amgma-landing/
     └── jekyll.yml           # Déploiement GitHub Pages
 ```
 
-Toute la copy du site est externalisée dans `_data/` — pour éditer un texte, modifiez le YAML, pas le HTML.
+Toute la copy du site est externalisée dans `_data/` : pour éditer un texte, modifiez le YAML, pas le HTML.
 
 ### Ajouter un portrait
 
@@ -80,7 +80,7 @@ Voir [DEPLOYMENT.md](DEPLOYMENT.md) pour les détails (choix de GitHub Actions v
 
 ## Accessibilité
 
-- Thème jour (papier) par défaut, thème nuit au choix (mémorisé) — contrastes WCAG AA dans les deux
+- Thème jour (papier) par défaut, thème nuit au choix (mémorisé), contrastes WCAG AA dans les deux
 - Skip link clavier
 - `aria-hidden` sur les éléments décoratifs
 - `prefers-reduced-motion` respecté (désactive marquee, reveal et lecture automatique de la vidéo)
@@ -88,6 +88,6 @@ Voir [DEPLOYMENT.md](DEPLOYMENT.md) pour les détails (choix de GitHub Actions v
 
 ## Licence
 
-Le code de ce site est publié sous licence MIT — voir [LICENSE](LICENSE).
+Le code de ce site est publié sous licence MIT (voir [LICENSE](LICENSE)).
 
 Les contenus rédactionnels (textes, copy) et les marques **AMGMA** et **Book Nova** restent la propriété de AMGMA SAS.

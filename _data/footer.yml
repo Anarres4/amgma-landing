@@ -18,7 +18,7 @@ columns:
       - label: "Book Nova ↗"
         href: "https://book-nova.com/"
         target: "_blank"
-      - label: "N° 002 — Bientôt"
+      - label: "N° 002 (bientôt)"
         href: "#"
   - title: "Contact"
     links:

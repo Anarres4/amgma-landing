@@ -1,5 +1,5 @@
 /* =================================================================
-   AMGMA — Landing page
+   AMGMA landing page
    Palette éditoriale « papier » (jour, par défaut) et « onyx » (nuit),
    custom CSS only (no framework).
    Source of truth: design_handoff_amgma_landing/AMGMA Landing.html
@@ -8,7 +8,7 @@
 :root {
   color-scheme: light;
 
-  /* Paper palette — thème jour, par défaut */
+  /* Paper palette : thème jour, par défaut */
   --bg: #FBF8F3;
   --bg-deep: #F4EEE4;
   --surface: #FFFFFF;
@@ -23,7 +23,7 @@
   --accent-deep: #A84B28;
   --gold: #D9A44A;
   --sage: #9FB089;
-  --brand: #E4885F;            /* Book Nova terracotta — logo, halos, ornements */
+  --brand: #E4885F;            /* Book Nova terracotta : logo, halos, ornements */
   --brand-dot: #E9AD50;        /* point du monogramme « A. » */
   --on-tag: #1A1612;           /* texte sur pastilles sauge / or */
 

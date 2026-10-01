@@ -45,7 +45,7 @@ Lorsqu'un domaine personnalisé est ajouté (ex. `www.amgma.com`), il faut :
    www.amgma.com
    ```
 3. Configurer les DNS chez le registrar (enregistrements `A` ou `CNAME` vers
-   GitHub Pages — voir la
+   GitHub Pages, voir la
    [doc officielle](https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site)).
 4. Cocher **Enforce HTTPS** dans Settings → Pages une fois le certificat émis.
 

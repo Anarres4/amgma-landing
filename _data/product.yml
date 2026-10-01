@@ -12,7 +12,7 @@ title_html: "Book <em>Nova.</em>"
 
 lede: >-
   L'application qui transforme votre façon de lire. Scannez un livre,
-  découvrez sa profondeur, construisez votre bibliothèque vivante —
+  découvrez sa profondeur, construisez votre bibliothèque vivante
   et redonnez sa place à la lecture, une page à la fois.
 
 features:
@@ -44,7 +44,7 @@ ctas:
 # (assets/js/product-video.js). Le navigateur prend la 1re source qu'il sait
 # lire : AV1 (plus légère), sinon H.264.
 video:
-  label: "N° 001 — iOS / Android"
+  label: "N° 001 · iOS / Android"
   poster: "/assets/video/book-nova-promo-poster.webp"
   title: "Vidéo de présentation de Book Nova"
   # Textes affichés dans la vidéo, dans l'ordre (alternative pour les

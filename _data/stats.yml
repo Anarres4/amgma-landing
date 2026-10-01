@@ -4,6 +4,6 @@ items:
   - value_html: "1 / <em>∞</em>"
     label: "Applications publiées / à venir"
   - value_html: "0 <em>€</em>"
-    label: "Levées de fonds — auto-financé"
+    label: "Levées de fonds, auto-financé"
   - value_html: "2"
     label: "Co-fondateurs, Toulouse"

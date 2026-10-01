@@ -2,7 +2,7 @@
 # Front-matter vide pour que Jekyll copie ce fichier vers _site/
 layout: null
 ---
-# AMGMA — Studio logiciel indépendant
+# AMGMA, studio logiciel indépendant
 # Toulouse, France · Contact : amgma@outlook.fr
 
 ## À propos
@@ -13,11 +13,11 @@ AMGMA est une SAS française fondée en 2025 par Ana Gutierrez (Présidente) et 
 
 Trois principes guident AMGMA :
 
-1. **Édition** — Un logiciel, un propos. Chaque application répond à une question précise. Nous supprimons avant d'ajouter.
-2. **Artisanat** — Le soin comme cahier des charges. Typographie, animation, copywriting, son : rien n'est accessoire.
-3. **Indépendance** — Pas de pression extérieure. Auto-financé, sans investisseur. Nos décisions répondent aux utilisateurs, pas aux tableaux de bord trimestriels.
+1. **Édition.** Un logiciel, un propos. Chaque application répond à une question précise. Nous supprimons avant d'ajouter.
+2. **Artisanat.** Le soin comme cahier des charges. Typographie, animation, copywriting, son : rien n'est accessoire.
+3. **Indépendance.** Pas de pression extérieure. Auto-financé, sans investisseur. Nos décisions répondent aux utilisateurs, pas aux tableaux de bord trimestriels.
 
-## Produit N° 001 — Book Nova
+## Produit N° 001 : Book Nova
 
 Book Nova est la première œuvre d'AMGMA, disponible gratuitement sur iOS et Android. L'application transforme votre façon de lire : scans de livres illimités, recommandations éditoriales humaines (non algorithmiques), statistiques de lecture personnelles, bibliothèque enrichie.
 
@@ -27,8 +27,8 @@ Book Nova est la première œuvre d'AMGMA, disponible gratuitement sur iOS et An
 
 ## Fondateurs
 
-- **Ana Gutierrez** — Présidente, co-fondatrice. Dirige la vision produit et la stratégie d'AMGMA.
-- **Florent Sandri** — Directeur général, co-fondateur. Pilote les opérations, la tech et le développement commercial.
+- **Ana Gutierrez**, présidente et co-fondatrice. Dirige la vision produit et la stratégie d'AMGMA.
+- **Florent Sandri**, directeur général et co-fondateur. Pilote les opérations, la tech et le développement commercial.
 
 ## Contact
 

@@ -1,7 +1,7 @@
 ---
 # Front-matter vide pour que Jekyll copie ce fichier vers _site/
 ---
-# AMGMA — robots.txt
+# robots.txt d'AMGMA
 # Site corporate, tout est ouvert aux crawlers.
 
 User-agent: *
