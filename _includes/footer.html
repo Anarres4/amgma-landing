@@ -22,6 +22,7 @@
     {% endfor %}
   </div>
   <div class="footer-bottom">
+    {% include brand-mark.html class="footer-seal" %}
     <span>{{ footer.bottom.left }}</span>
     {% if footer.bottom.legal_link %}
       <span><a href="{{ footer.bottom.legal_link.href | relative_url }}">{{ footer.bottom.legal_link.label }}</a></span>
