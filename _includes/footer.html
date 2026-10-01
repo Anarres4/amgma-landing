@@ -2,7 +2,10 @@
 <footer>
   <div class="footer-wrap">
     <div>
-      <div class="footer-brand">{{ footer.brand_html }}</div>
+      <div class="footer-brand">
+        {% include brand-mark.html class="footer-brand-mark" %}
+        <span>{{ footer.brand }}</span>
+      </div>
       <p class="footer-desc">{{ footer.description }}</p>
     </div>
     {% for col in footer.columns %}

@@ -9,29 +9,34 @@
 
   <link rel="canonical" href="{{ page.url | absolute_url }}" />
 
+  <meta name="theme-color" content="#FBF8F3" />
+
   <script>
-    // Applique le thème avant rendu pour éviter le FOUC
+    // Thème jour par défaut ; applique la nuit (si choisie) avant rendu pour éviter le FOUC
     (function () {
       try {
-        var t = localStorage.getItem('amgma-theme');
-        if (t === 'light') document.documentElement.classList.add('theme-light');
+        localStorage.removeItem('amgma-theme'); // ancienne clé (nuit par défaut à l'époque)
+        if (localStorage.getItem('amgma-theme-v2') === 'dark') {
+          document.documentElement.classList.add('theme-dark');
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0E0D10');
+        }
       } catch (e) {}
     })();
   </script>
 
-  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any" />
-  <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}" />
-  <link rel="icon" type="image/png" sizes="48x48" href="{{ '/assets/favicon-48.png' | relative_url }}" />
-  <link rel="icon" type="image/png" sizes="192x192" href="{{ '/assets/favicon-192.png' | relative_url }}" />
-  <link rel="icon" type="image/png" sizes="512x512" href="{{ '/assets/favicon-512.png' | relative_url }}" />
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/apple-touch-icon.png' | relative_url }}" />
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}?v=2" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}?v=2" />
+  <link rel="icon" type="image/png" sizes="48x48" href="{{ '/assets/favicon-48.png' | relative_url }}?v=2" />
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ '/assets/favicon-192.png' | relative_url }}?v=2" />
+  <link rel="icon" type="image/png" sizes="512x512" href="{{ '/assets/favicon-512.png' | relative_url }}?v=2" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/apple-touch-icon.png' | relative_url }}?v=2" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{{ site.title }}" />
   <meta property="og:description" content="{{ site.description }}" />
   <meta property="og:url" content="{{ page.url | absolute_url }}" />
   <meta property="og:locale" content="{{ site.locale }}" />
-  <meta property="og:image" content="{{ '/assets/og-image.png' | absolute_url }}" />
+  <meta property="og:image" content="{{ '/assets/og-image.png' | absolute_url }}?v=2" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="AMGMA — Studio logiciel indépendant, Toulouse" />
@@ -39,7 +44,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{{ site.title }}" />
   <meta name="twitter:description" content="{{ site.description }}" />
-  <meta name="twitter:image" content="{{ '/assets/og-image.png' | absolute_url }}" />
+  <meta name="twitter:image" content="{{ '/assets/og-image.png' | absolute_url }}?v=2" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,6 +62,13 @@
         "name": "AMGMA SAS",
         "alternateName": "AMGMA",
         "url": "https://amgma.fr/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://amgma.fr/assets/logo-og-400.png",
+          "width": 400,
+          "height": 400
+        },
+        "image": "https://amgma.fr/assets/og-image.png",
         "email": "amgma@outlook.fr",
         "foundingDate": "2025",
         "description": "AMGMA est un studio logiciel indépendant. Nous éditons Book Nova, l'application qui transforme votre façon de lire.",
@@ -136,6 +148,7 @@
         "@id": "https://amgma.fr/#florent-sandri",
         "name": "Florent Sandri",
         "jobTitle": "Directeur général, Co-fondateur",
+        "image": "https://amgma.fr/assets/team/florent-sandri.webp",
         "worksFor": { "@id": "https://amgma.fr/#organization" },
         "description": "Florent pilote les opérations, la tech et le développement commercial d'AMGMA."
       }
@@ -155,8 +168,8 @@
 
   {% include footer.html %}
 
-  <button type="button" class="theme-fab" data-theme-toggle
-          aria-pressed="false" aria-label="Basculer entre mode nuit et jour">
+  <button type="button" class="theme-fab" data-theme-toggle hidden
+          aria-pressed="false" aria-label="Mode nuit" title="Activer le mode nuit">
     <svg class="icon-moon" viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
     </svg>
@@ -168,5 +181,6 @@
 
   <script src="{{ '/assets/js/reveal.js' | relative_url }}" defer></script>
   <script src="{{ '/assets/js/theme.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/product-video.js' | relative_url }}" defer></script>
 </body>
 </html>

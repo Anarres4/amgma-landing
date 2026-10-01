@@ -4,9 +4,12 @@ lede: >-
   AMGMA est dirigée par ses deux associés. Pas d'intermédiaire,
   pas de service communication — vous parlez directement à ceux qui font.
 
+# photo : portrait carré (≥ 480 px, recadré en cercle par le CSS).
+# Sans photo, l'avatar affiche l'initiale. Pour ajouter celle d'Ana :
+# déposer le fichier dans assets/team/ puis renseigner photo + photo_alt.
 members:
   - initial: "A"
-    tag: "AM — 01"
+    tag: "AG — 01"
     role: "Présidente · Co-fondatrice"
     name_html: "Ana <em>Gutierrez</em>"
     bio: >-
@@ -14,7 +17,9 @@ members:
       une conception du logiciel qui place l'utilisateur, la lenteur et
       la précision éditoriale au-dessus du reste.
   - initial: "F"
-    tag: "FG — 02"
+    tag: "FS — 02"
+    photo: "/assets/team/florent-sandri.webp"
+    photo_alt: "Portrait illustré de Florent Sandri"
     role: "Directeur général · Co-fondateur"
     name_html: "Florent <em>Sandri</em>"
     bio: >-

@@ -1,25 +1,23 @@
-{%- assign phone = site.data.product.phone -%}
-<div class="phone-stage" role="img" aria-label="Aperçu de l'application Book Nova sur iPhone, affichant votre bibliothèque de 42 livres">
-  <div class="phone-back" aria-hidden="true"></div>
-  <div class="phone" aria-hidden="true">
-    <div class="phone-notch"></div>
+{%- assign video = site.data.product.video -%}
+<div class="phone-stage">
+  <div class="phone-halo" aria-hidden="true"></div>
+  <div class="phone">
     <div class="phone-screen">
-      <div class="bn-status">
-        <span>{{ phone.status.time }}</span>
-        <span>{{ phone.status.signal }}</span>
-      </div>
-      <div class="bn-body">
-        <div class="bn-eyebrow">{{ phone.eyebrow }}</div>
-        <div class="bn-h">{{ phone.title_html }}</div>
-        <div class="bn-sub">{{ phone.sub }}</div>
-        <div class="bn-stack">
-          {% for book in phone.books %}
-            <div class="bn-book" style="background:{{ book.color }}; width:{{ book.width }}px;{% if book.height %} height:{{ book.height }}px;{% endif %}">{{ book.title }}</div>
-          {% endfor %}
-        </div>
-        <div class="bn-cta">{{ phone.cta }}</div>
-      </div>
+      {%- comment -%} `controls` sert de repli sans JS : product-video.js le retire. {%- endcomment -%}
+      <video class="phone-video" data-product-video muted loop playsinline controls preload="none"
+             width="720" height="1280" poster="{{ video.poster | relative_url }}"
+             aria-label="{{ video.title | escape }}" aria-describedby="product-video-transcript">
+        {% for s in video.sources %}
+          <source src="{{ s.src | relative_url }}" type='{{ s.type }}' />
+        {% endfor %}
+      </video>
+      <span class="phone-island" aria-hidden="true"></span>
     </div>
+    <button type="button" class="video-toggle" data-video-toggle hidden aria-label="Mettre la vidéo en pause">
+      <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+      <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>
+    </button>
   </div>
-  <div class="phone-label" aria-hidden="true">{{ phone.label }}</div>
+  <p class="visually-hidden" id="product-video-transcript">{{ video.transcript }}</p>
+  <p class="phone-label" aria-hidden="true">{{ video.label }}</p>
 </div>

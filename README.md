@@ -7,7 +7,7 @@ Site vitrine du studio AMGMA, construit en **Jekyll** et hébergé gratuitement 
 - **Jekyll 4.4** — générateur de site statique
 - **Ruby 3.4** — runtime
 - **CSS custom** — aucun framework (pas de Bootstrap / Tailwind)
-- **JS minimal** — IntersectionObserver pour le reveal au scroll
+- **JS minimal** — IntersectionObserver pour le reveal au scroll et la vidéo Book Nova, bascule jour/nuit
 
 ## Prérequis
 
@@ -40,11 +40,16 @@ Le site est disponible sur http://127.0.0.1:4000/amgma-landing/
 │   ├── contact.yml
 │   └── footer.yml
 ├── _includes/               # Composants de section
+│   ├── brand-mark.html      # Monogramme « A. » (SVG inline)
+│   └── section-break.html   # Fleuron • ● • entre deux sections
 ├── _layouts/
 │   └── default.html         # Layout principal
 ├── assets/
+│   ├── brand/amgma-mark.svg # Monogramme « A. » (fichier autonome)
 │   ├── css/main.css         # Styles
-│   └── js/reveal.js         # Reveal on scroll
+│   ├── js/                  # reveal.js, theme.js, product-video.js
+│   ├── team/                # Portraits des fondateurs
+│   └── video/               # Vidéo Book Nova (AV1 + H.264) et son poster
 ├── index.html               # Page unique (single-page)
 ├── 404.html
 └── .github/workflows/
@@ -52,6 +57,12 @@ Le site est disponible sur http://127.0.0.1:4000/amgma-landing/
 ```
 
 Toute la copy du site est externalisée dans `_data/` — pour éditer un texte, modifiez le YAML, pas le HTML.
+
+### Ajouter un portrait
+
+Déposer un portrait carré (≥ 480 px) dans `assets/team/`, puis renseigner
+`photo` et `photo_alt` sur le membre concerné dans `_data/team.yml`. Sans
+photo, l'avatar affiche l'initiale.
 
 ## Build de production
 
@@ -69,10 +80,11 @@ Voir [DEPLOYMENT.md](DEPLOYMENT.md) pour les détails (choix de GitHub Actions v
 
 ## Accessibilité
 
-- Palette WCAG AA sur fond sombre
+- Thème jour (papier) par défaut, thème nuit au choix (mémorisé) — contrastes WCAG AA dans les deux
 - Skip link clavier
 - `aria-hidden` sur les éléments décoratifs
-- `prefers-reduced-motion` respecté (désactive marquee et reveal)
+- `prefers-reduced-motion` respecté (désactive marquee, reveal et lecture automatique de la vidéo)
+- Vidéo muette, avec bouton lecture/pause
 
 ## Licence
 

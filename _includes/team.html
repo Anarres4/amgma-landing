@@ -9,9 +9,14 @@
     <div class="team-grid">
       {% for m in team.members %}
         <div class="member">
-          <div class="avatar" aria-hidden="true">
-            <div class="avatar-initials">{{ m.initial }}</div>
-            <div class="avatar-tag">{{ m.tag }}</div>
+          <div class="avatar{% if m.photo %} avatar--photo{% endif %}">
+            {% if m.photo %}
+              <img class="avatar-img" src="{{ m.photo | relative_url }}" alt="{{ m.photo_alt }}"
+                   width="480" height="480" loading="lazy" decoding="async" />
+            {% else %}
+              <div class="avatar-initials" aria-hidden="true">{{ m.initial }}</div>
+            {% endif %}
+            <div class="avatar-tag" aria-hidden="true">{{ m.tag }}</div>
           </div>
           <div>
             <div class="member-role">{{ m.role }}</div>

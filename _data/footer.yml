@@ -1,4 +1,5 @@
-brand_html: "AMGMA<em>.</em>"
+# Rendu à droite du monogramme « A. » (voir _includes/brand-mark.html)
+brand: "AMGMA"
 description: >-
   Studio logiciel indépendant basé à Toulouse.
   Nous éditons des applications mobiles pensées pour durer.

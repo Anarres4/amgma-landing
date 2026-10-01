@@ -1,24 +1,27 @@
 (function () {
-  var KEY = 'amgma-theme';
+  // Clé renouvelée : l'ancienne gardait des choix faits quand la nuit était le défaut
+  var KEY = 'amgma-theme-v2';
   var btn = document.querySelector('[data-theme-toggle]');
   if (!btn) return;
+  btn.hidden = false;
+  var themeColor = document.querySelector('meta[name="theme-color"]');
 
+  // Thème jour par défaut ; la nuit est une option mémorisée (localStorage)
   function getTheme() {
-    return document.documentElement.classList.contains('theme-light') ? 'light' : 'dark';
+    return document.documentElement.classList.contains('theme-dark') ? 'dark' : 'light';
   }
 
   function syncButton() {
-    var isLight = getTheme() === 'light';
-    btn.setAttribute('aria-pressed', String(isLight));
-    btn.setAttribute('aria-label',
-      isLight ? 'Activer le mode nuit' : 'Activer le mode jour');
+    var isDark = getTheme() === 'dark';
+    btn.setAttribute('aria-pressed', String(isDark));
     btn.setAttribute('title',
-      isLight ? 'Activer le mode nuit' : 'Activer le mode jour');
+      isDark ? 'Activer le mode jour' : 'Activer le mode nuit');
   }
 
   function apply(theme, persist) {
-    var isLight = theme === 'light';
-    document.documentElement.classList.toggle('theme-light', isLight);
+    var isDark = theme === 'dark';
+    document.documentElement.classList.toggle('theme-dark', isDark);
+    if (themeColor) themeColor.setAttribute('content', isDark ? '#0E0D10' : '#FBF8F3');
     if (persist) {
       try { localStorage.setItem(KEY, theme); } catch (e) {}
     }
@@ -28,7 +31,7 @@
   syncButton();
 
   btn.addEventListener('click', function (e) {
-    var next = getTheme() === 'light' ? 'dark' : 'light';
+    var next = getTheme() === 'dark' ? 'light' : 'dark';
     var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     if (!document.startViewTransition || reduced) {
@@ -65,6 +68,6 @@
           pseudoElement: '::view-transition-new(root)'
         }
       );
-    });
+    }).catch(function () {}); // transition sautée (double activation) : rien à animer
   });
 })();
